@@ -1,7 +1,8 @@
 import React from 'react'
 import { GoogleLogin, useGoogleLogin } from '@react-oauth/google'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, redirect } from 'react-router-dom'
 import jwt_decode from "jwt-decode";
+import { client } from '../client'
 
 import { FcGoogle } from 'react-icons/fc'
 import logoWhite from "../assets/logowhite.png"
@@ -10,8 +11,10 @@ import shareVideo from '../assets/share.mp4'
 
 const Login = () => {
 
+  const navigate = useNavigate()
+
   const addUser = (userinfo) => {
-    console.log(userinfo)
+    // console.log(userinfo)
     localStorage.setItem("user", JSON.stringify(userinfo))
 
     const { name, picture, sub: googleId } = userinfo
@@ -21,6 +24,11 @@ const Login = () => {
       username: name,
       image: picture
     }
+
+    client.createIfNotExists(doc)
+      .then(() => {
+        navigate("/", { replace: true })
+      })
   }
 
   return (
