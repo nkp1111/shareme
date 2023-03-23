@@ -13,7 +13,7 @@
   - install react and tailwind css
   - install react-icons, react-router-dom, react-masonry, react-loader-spinner, uuid, react-google-login, @sanity/client and @sanity/image-url packages
   - create routes for login page and home page using *react-router-dom*
-  - Add google-login component
+  - Add google-login component using *@react-oauth/google* library
 
 ## Built with
 
