@@ -15,6 +15,8 @@
   - create routes for login page and home page using *react-router-dom*
   - Add google-login component using *@react-oauth/google* library
   - login user and create sanity client to add user into the database and
+  - add home page
+  - add sidebar
   
 ## Built with
 

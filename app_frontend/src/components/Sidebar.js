@@ -13,7 +13,6 @@ const categories = [
   { name: "animal" },
   { name: "photography" },
   { name: "anime" },
-  { name: "coding" },
   { name: "other" }
 ]
 
