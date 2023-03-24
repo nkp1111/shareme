@@ -19,12 +19,25 @@
   - add sidebar
   - add pin component and navbar
   - add *Circles* spinner from *react-loader-spinner* package for loading
+  - show pins/image uploaded with *react-masonry-css* package
   
 ## Built with
 
 - [Sanity](https://www.sanity.io/)
 - [React](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
+
+## Resources
+
+- react-icons
+- react-router-dom
+- @react-oauth/google
+- @sanity/client
+- @sanity/image-url
+- react-loader-spinner
+- react-masonry-css
+- jwt-decode
+- uuid
 
 ## Acknowledgement
 
