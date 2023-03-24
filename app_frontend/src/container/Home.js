@@ -8,6 +8,7 @@ import Pins from './Pins'
 import { client } from '../client'
 import logo from '../assets/logo.png'
 import { userQuery } from '../utils/data'
+import { fetchUser } from '../utils/fetchUser'
 
 const Home = () => {
 
@@ -15,8 +16,7 @@ const Home = () => {
   const [user, setUser] = useState(null);
   const scrollRef = useRef(null);
 
-  let userInfoStr = localStorage.getItem("user")
-  const userInfo = userInfoStr !== undefined ? JSON.parse(userInfoStr) : localStorage.clear()
+  let userInfo = fetchUser()
 
   useEffect(() => {
     // sub is google id in the google login 
