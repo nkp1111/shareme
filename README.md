@@ -17,6 +17,8 @@
   - login user and create sanity client to add user into the database and
   - add home page
   - add sidebar
+  - add pin component and navbar
+  - add *Circles* spinner from *react-loader-spinner* package for loading
   
 ## Built with
 
