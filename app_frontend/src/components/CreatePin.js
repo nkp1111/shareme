@@ -136,6 +136,7 @@ const CreatePin = ({ user }) => {
             placeholder="Add your title"
             className='outline-none text-2xl sm:text-3xl font-bold border-b-2 border-gray-200 p-2'
           />
+          {/* current user  */}
           {user && (
             <div className="flex-gap-2 my-2 items-center bg-white rounded-lg">
               <img
@@ -162,6 +163,7 @@ const CreatePin = ({ user }) => {
             placeholder="Add a destination link"
             className='outline-none text-base sm:text-lg border-b-2 border-gray-200 p-2'
           />
+          {/* category input  */}
           <div className="flex flex-col">
             <div>
               <p className='mb-2 font-semibold text-lg sm:text-xl'>Choose Pin Category</p>
@@ -175,6 +177,7 @@ const CreatePin = ({ user }) => {
                 ))}
               </select>
             </div>
+            {/* save button  */}
             <div className="flex justify-end items-end mt-5">
               <button
                 type="button"
