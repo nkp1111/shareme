@@ -1,8 +1,25 @@
 # Shareme: A social media app
 
+Social media app that allows users to upload image, save image, download image and comment on images uploaded by other users built with sanity, react, tailwindcss
+
+## Table of contents
+
+- [Links](#links)
+- [Image](#image)
+- [Steps completed](#steps-completed)
+- [Built with](#built-with)
+- [Resources](#resources)
+- [Acknowledgement](#acknowledgement)
+- [Author](#author)
+
 ## Links
 
 - [Solution](https://github.com/nkp1111/shareme)
+- [Live app](https://nkp1111-social-media-shareme.netlify.app/)
+
+## Image
+
+![image](./app_frontend/src/assets/Screenshot%202023-03-25%20183519.png)
 
 ## Steps completed
 
@@ -49,3 +66,8 @@
 
 - This project is done following the video tutorial of
 *JavaScript Mastery* - [Modern React Web Development Full Course](https://www.youtube.com/watch?v=XxXyfkrP298)
+
+## Author
+
+- Name - Neeraj Parmar
+- Twitter - @nkp11111507
