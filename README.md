@@ -20,7 +20,10 @@
   - add pin component and navbar
   - add *Circles* spinner from *react-loader-spinner* package for loading
   - show pins/image uploaded with *react-masonry-css* package
-  
+  - add createPin component for inputs of all pin detail and saving pin
+  - sanity query for pin detail from pin id
+  - add pinDetail page with additional info and make comment
+
 ## Built with
 
 - [Sanity](https://www.sanity.io/)
