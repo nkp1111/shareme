@@ -25,6 +25,7 @@
   - add pinDetail page with additional info and make comment
   - add sanity query to get created pin and saved pin
   - add userProfile component for showing saved and created pin by user
+  - add search component
 
 ## Built with
 
