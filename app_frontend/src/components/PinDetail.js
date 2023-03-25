@@ -124,7 +124,6 @@ const PinDetail = ({ user }) => {
               </div>
             ))}
           </div>
-          {console.log(user)}
           <div className="flex flex-wrap mt-6 gap-3">
             {/* current user icon  */}
             <Link to={`user-profile/${user?._id}`}
