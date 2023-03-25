@@ -15,7 +15,7 @@ const Pin = ({ pin: { image, postedBy, destination, _id, save } }) => {
   let userInfo = fetchUser()
 
   // 'sub' is 'googleId' in the google login 
-  const alreadySaved = !!(save?.filter(item => item.postedBy._id === userInfo.sub)?.length)
+  const alreadySaved = !!(save?.filter(item => item.postedBy._id === userInfo?.sub)?.length)
 
   // saving pin/image to database 
   const savePin = (id) => {
@@ -25,10 +25,10 @@ const Pin = ({ pin: { image, postedBy, destination, _id, save } }) => {
         .setIfMissing({ save: [] })
         .insert("after", "save[-1]", [{
           _key: uuidv4(),
-          userId: userInfo.sub,
+          userId: userInfo?.sub,
           postedBy: {
             _type: "postedBy",
-            _ref: userInfo.sub
+            _ref: userInfo?.sub
           }
         }])
         .commit()
@@ -112,7 +112,7 @@ const Pin = ({ pin: { image, postedBy, destination, _id, save } }) => {
               )}
 
               {/* delete button  */}
-              {postedBy?._id === userInfo.sub && (
+              {postedBy?._id === userInfo?.sub && (
                 <button type="button" className='bg-white p-2 opacity-70 hover:opacity-100 font-bold text-dark text-base rounded-3xl hover:shadow-md outline-none'
                   onClick={(e) => {
                     e.stopPropagation()
